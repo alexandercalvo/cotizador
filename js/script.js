@@ -6,6 +6,7 @@ $btnAdd = $d.querySelectorAll(".btnPlus"),
 
 $numberAdult = $d.querySelector("#adult");
 $numberChildren = $d.querySelector("#children")
+$numberRooms = $d.querySelector('#rooms');
 
 $btnDecrement = $d.querySelectorAll("btnDecrese")
 $button .addEventListener("click", (e)=>{
@@ -13,29 +14,24 @@ $button .addEventListener("click", (e)=>{
     $modal.classList.toggle("visibility");
 
 });
-let count=2;
 $btnAdd.forEach((plus)=>{
+    
+    let count=2;
     plus.addEventListener("click", (e)=>{
-     
         if(e.target.classList[1] == "btnPlusAdult"){ 
-
-              
-          
             count++;
             $numberAdult.textContent=count;
-       }
-       if(e.target.classList[1] == "btnChildren"){
-      
-      
+        }
+        if(e.target.classList[1] == "btnChildren"){
             count++;
             $numberChildren.textContent=count;
         }
-     if(e.target.classList[1] == plus.classList[1]){
-      
-        count++;
-      
-    }
-            
+        if(e.target.classList[1] == "btnRooms"){
+            count++;
+            $numberRooms.textContent=count;
+        }
+
+                 
            
         
     });
