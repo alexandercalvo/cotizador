@@ -10,7 +10,10 @@
 </head>
 <body>
     <section class="quotingContainer">
-        <input type="text" placeholder="Ingresa tu destino" class="destiny">
+        <div class="destiny">
+            <i class="fa-solid fa-bed"></i>
+            <input type="search" placeholder="Adónde vas?">
+        </div>  
         <input type="date" name="fecha" id="" class="date">
         <a href="" class="button">
             <i class="fa-solid fa-user"></i>
@@ -23,19 +26,19 @@
     <div class="modal visibility">
         <div class="row">
             <label for="" class="label">Adultos</label>
-            <button class="btnDecrese">-</button>
+            <button class="btnDecrese btnAdult ">-</button>
             <label for="" id="adult">2</label>
             <button class="btnPlus btnPlusAdult" >+</button>
         </div>
         <div class="row">
             <label for="" class="label">Niños</label>
-            <button class="btnDecrese">-</button>
+            <button class="btnDecrese btnChildren">-</button>
             <label for="" id="children">2</label>
             <button class="btnPlus btnChildren">+</button>
         </div>
         <div class="row">
             <label for="" class="label" >Habitaciones</label>
-            <button class="btnDecrese">-</button>
+            <button class="btnDecrese btnRooms">-</button>
             <label for="" id="rooms">2</label>
             <button class="btnPlus btnRooms">+</button>
         </div>

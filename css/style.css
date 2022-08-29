@@ -1,58 +1,73 @@
+body{
+    margin: 0;
+}
 .quotingContainer{
 position: relative;
-display: flex;
+display: none;
 flex-direction: row;
 justify-content: space-evenly;
-
+background-color:#eee9d7;
 margin-top: 10px;
 margin-left: auto;
 margin-right: auto;
+padding: 3px;
 }
-
+.fa-bed{
+    width: 10%;
+    margin-left: 15px;
+    color:#7e79799f;
+}
 .button{
     width: 20%;
     border-top: 0px solid transparent;
     padding: 15px 5px;
-    background-color:#d82a16;
     text-decoration: none;
-    color:rgb(168, 164, 164);
+    color:#7e79799f;
     text-align: center;
-    border-radius: 30px/400px;
+   border:none;
+   background-color:#fff;
 }
 .destiny{
     width:15%;
     margin-right: 15px;
+    color:#7e79799f;
 }
 .date{
     width:15vw;
     margin-right: 15px;
+    color:#7e79799f;
 }
 .modal{
-    position:absolute;
-    top:65px;
-    left: 59vw;
+   
+    position: absolute;
+    top: 7vh;
+    left: 62vw;
     width: 240px;
     background-color: #eee9d7;
     display: flex;
     flex-direction: column;
-    color:#d82a16;
     padding: 20px;
+    color:#7e79799f;
+  
+}
+.btnPlus .btnDecrese{
+    color:#7e79799f;
+    background-color: red;
+    width: 300px;
+
 }
 .visibility{
     display: none;
 }
 
 .row{
+    color:#7e79799f;
     margin-bottom: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.btn{
-    color:red;
-    border:0.0px solid red;
-   
-}
+
 
 .label{
     width: 4vw;
@@ -63,14 +78,20 @@ margin-right: auto;
     height: 40px;
 }
 @media (min-width: 576px) { 
-
+    .quotingContainer{
+        display: none;
+    }
 
  }
 
 
 @media (min-width: 768px) { 
-
-
+    .quotingContainer{
+     
+    display: none;
+   
+    }
+   
  }
 
 
@@ -81,18 +102,21 @@ margin-right: auto;
 
 @media (min-width: 1200px) { 
 .quotingContainer{
-    width: 70vw;
+    width: 100vw;
 display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-
 margin-top: 10px;
 margin-left: auto;
 margin-right: auto;
 }
 .destiny{
-    width: 25%;
     margin-right: 15px;
+    background-color: #fff;
+    border: none;
+}
+.destiny input{
+    border: none;
+    width: 80%;
+    height: 100%;
 }
 .date{
     width:15vw;
@@ -100,11 +124,13 @@ margin-right: auto;
 }
 .btnSearch{
     width: 100px;
-    background-color: aqua;
-
+    background-color:red;
+    color:#fff;
+    border: none;
+    border-radius: 2px 40px / 20px 5px;
 }
 .fa-user{
-    color: gray;
+    color:#7e79799f;
     
 }
 .paragrap{
