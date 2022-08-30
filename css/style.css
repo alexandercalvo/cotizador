@@ -1,6 +1,6 @@
-body{
-    margin: 0;
-}
+    body{
+        margin: 0;
+    }
 .quotingContainer{
 position: relative;
 display: none;
@@ -50,12 +50,9 @@ padding: 3px;
     color:#7e79799f;
   
 }
-.btnPlus .btnDecrese{
-    color:#7e79799f;
-    background-color: red;
-    width: 300px;
 
-}
+   
+
 .visibility{
     display: none;
 }
@@ -121,6 +118,8 @@ margin-right: auto;
 .date{
     width:15vw;
     margin-right: 15px;
+    align-content: space-between;
+    justify-content: ;
 }
 .btnSearch{
     width: 100px;
